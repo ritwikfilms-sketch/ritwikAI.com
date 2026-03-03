@@ -1,28 +1,84 @@
-<!-- HIRE RITWIK AI SECTION -->
-<section style="padding:80px 20px; text-align:center; background:linear-gradient(135deg,#0f2027,#203a43,#2c5364); color:white;">
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ritwik AI | Automation Platform</title>
+</head>
 
-  <h2 style="font-size:38px; margin-bottom:20px;">
-    🚀 Hire Ritwik AI
+<body style="margin:0; font-family:Arial, sans-serif; background:#0f2027;">
+
+<!-- HERO SECTION -->
+<section style="height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; background:linear-gradient(135deg,#0f2027,#203a43,#2c5364); color:white;">
+
+  <h1 style="font-size:50px; margin-bottom:15px;">
+    🚀 Ritwik AI
+  </h1>
+
+  <h2 style="font-weight:400;">
+    <span id="typing"></span>
   </h2>
 
-  <p style="max-width:700px; margin:0 auto 40px; font-size:18px; line-height:1.6; opacity:0.9;">
+  <a href="https://wa.me/918355862282?text=Hello%20Ritwik%20AI,%20I%20want%20to%20hire%20you."
+     target="_blank"
+     style="margin-top:40px;
+            background:linear-gradient(45deg,#00ffcc,#00cc99);
+            color:#000;
+            padding:15px 35px;
+            border-radius:50px;
+            text-decoration:none;
+            font-weight:bold;
+            font-size:18px;
+            box-shadow:0 10px 30px rgba(0,255,200,0.4);">
+     💬 Start Your AI Project
+  </a>
+
+</section>
+
+
+<!-- VIDEO SECTION -->
+<section style="padding:80px 20px; text-align:center; background:#111; color:white;">
+
+  <h2 style="font-size:38px; margin-bottom:40px;">🎥 Official Demo</h2>
+
+  <div style="max-width:420px; margin:0 auto;">
+    <div style="position:relative; padding-bottom:177%; height:0; overflow:hidden; border-radius:20px; box-shadow:0 20px 40px rgba(0,0,0,0.5);">
+      <iframe 
+        src="https://www.youtube.com/embed/TCzja0lWnAo?rel=0&modestbranding=1"
+        style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- HIRE SECTION -->
+<section style="padding:80px 20px; text-align:center; background:linear-gradient(135deg,#203a43,#2c5364); color:white;">
+
+  <h2 style="font-size:38px; margin-bottom:20px;">
+    💼 Hire Ritwik AI
+  </h2>
+
+  <p style="max-width:700px; margin:0 auto 50px; font-size:18px; line-height:1.6; opacity:0.9;">
     I build AI automation systems, smart websites, and powerful digital solutions 
     to help businesses grow faster using modern technology.
   </p>
 
-  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:25px; margin-bottom:50px;">
+  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px; margin-bottom:50px;">
 
-    <div style="background:rgba(255,255,255,0.08); padding:25px; border-radius:15px; width:260px;">
+    <div style="background:rgba(255,255,255,0.08); padding:30px; border-radius:20px; width:260px;">
       <h3>🤖 AI Automation</h3>
       <p>Smart AI tools & workflow automation.</p>
     </div>
 
-    <div style="background:rgba(255,255,255,0.08); padding:25px; border-radius:15px; width:260px;">
+    <div style="background:rgba(255,255,255,0.08); padding:30px; border-radius:20px; width:260px;">
       <h3>🌐 Website Development</h3>
       <p>Modern & fast business websites.</p>
     </div>
 
-    <div style="background:rgba(255,255,255,0.08); padding:25px; border-radius:15px; width:260px;">
+    <div style="background:rgba(255,255,255,0.08); padding:30px; border-radius:20px; width:260px;">
       <h3>📈 Digital Growth</h3>
       <p>Tech-powered brand and business growth.</p>
     </div>
@@ -31,10 +87,60 @@
 
   <a href="https://wa.me/918355862282?text=Hello%20Ritwik%20AI,%20I%20want%20to%20hire%20you."
      target="_blank"
-     style="background:#00ffcc; color:#000; padding:15px 35px; 
-     border-radius:30px; text-decoration:none; font-weight:bold; 
-     font-size:18px; display:inline-block;">
-     💬 Hire Ritwik AI on WhatsApp
+     style="background:linear-gradient(45deg,#00ffcc,#00cc99);
+            color:#000;
+            padding:18px 40px;
+            border-radius:50px;
+            text-decoration:none;
+            font-weight:bold;
+            font-size:18px;
+            box-shadow:0 10px 30px rgba(0,255,200,0.4);">
+     💬 Hire Now on WhatsApp
   </a>
 
 </section>
+
+
+<!-- FOOTER -->
+<footer style="text-align:center; padding:30px; background:#000; color:#aaa;">
+  ©️ 2026 Ritwik AI. Built in India 🇮🇳
+</footer>
+
+
+<!-- TYPING SCRIPT -->
+<script>
+const texts = [
+  "Future of Smart Automation.",
+  "AI Powered Websites.",
+  "Digital Growth Solutions.",
+  "Build. Automate. Scale."
+];
+
+let count = 0;
+let index = 0;
+let currentText = "";
+let letter = "";
+
+(function type() {
+  if (count === texts.length) {
+    count = 0;
+  }
+  currentText = texts[count];
+  letter = currentText.slice(0, ++index);
+
+  document.getElementById("typing").textContent = letter;
+
+  if (letter.length === currentText.length) {
+    setTimeout(() => {
+      index = 0;
+      count++;
+      setTimeout(type, 300);
+    }, 1500);
+  } else {
+    setTimeout(type, 80);
+  }
+})();
+</script>
+
+</body>
+</html>
